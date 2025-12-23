@@ -14,17 +14,30 @@
     <div id="controls">
         <label>
             Zoom
-            <input type="range" id="zoom" min="0.5" max="2.5" step="0.1" value="1">
+            <input type="range" id="zoom" min="1" max="2.5" step="0.1" value="1">
         </label>
+
+        <button id="toggle-visibility">Hide chests</button>
+        <button id="toggle-visited">Mark all as visited</button>
+
+        <div id="chest-counter">0 / 0 chests found</div>
     </div>
 
     <div id="map-viewport">
         <div id="map-container">
-            <img src="assets/sh-map.png" id="map">
+            <img src="assets/sh-map.png" id="map" draggable="false">
         </div>
+        <div id="coord-display"></div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
+<footer class="app-footer">
+    FINAL FANTASY XIV © 2010 – 2025 SQUARE ENIX CO., LTD.
+    FINAL FANTASY, FINAL FANTASY XIV, and FFXIV are registered trademarks or
+    trademarks of Square Enix Holdings Co., Ltd.
+    This is a fan-made, non-commercial project.
+</footer>
 
 </html>
