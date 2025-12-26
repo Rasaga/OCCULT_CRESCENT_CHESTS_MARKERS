@@ -127,3 +127,93 @@ h1 {
 #map-selector button:hover {
   background: rgba(0,0,0,0.9);
 }
+
+/* ==========================
+   SIDEBAR
+   ========================== */
+#sidebar {
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  width: 240px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 15px;
+  backdrop-filter: blur(6px);
+  color: #fff;
+  z-index: 2000;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+#sidebar h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 4px;
+  opacity: 0.9;
+}
+
+/* ==========================
+   MAP SELECTOR
+   ========================== */
+#sidebar-map-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#sidebar-map-selector button {
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid #666;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+
+#map-sidebar-map-selector button:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ==========================
+   CONTROLS
+   ========================== */
+#controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#controls button {
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid #666;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+#controls button:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+#controls label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+#chest-counter {
+  margin-top: 5px;
+  font-size: 13px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+

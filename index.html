@@ -9,26 +9,28 @@
 
 <body>
     <h1>Occult Crescent Chests Marker - Final Fantasy XIV</h1>
-
-    <div id="map-selector">
-        <button data-map="southHorn">South Horn</button>
-        <button data-map="test">Test</button>
-    </div>
-
-
     <!-- Controles -->
-    <div id="controls">
-        <label>
-            Zoom
-            <input type="range" id="zoom" min="1" max="2.5" step="0.1" value="1">
-        </label>
+    <div id="sidebar">
+        <h2>Maps</h2>
+        <div id="sidebar-map-selector">
+            <button data-map="southHorn">South Horn</button>
+            <!-- <button data-map="test">Test</button> -->
+        </div>
 
-        <button id="toggle-bronze">Hide bronze</button>
-        <button id="toggle-silver">Hide silver</button>
-        <button id="toggle-visibility">Hide chests</button>
-        <button id="toggle-visited">Mark all as visited</button>
+        <h2>Controls</h2>
+        <div id="controls">
+            <label>
+                Zoom
+                <input type="range" id="zoom" min="1" max="2.5" step="0.1" value="1">
+            </label>
 
-        <div id="chest-counter">0 / 0 chests found</div>
+            <button id="toggle-bronze">Hide bronze</button>
+            <button id="toggle-silver">Hide silver</button>
+            <button id="toggle-visibility">Hide chests</button>
+            <button id="toggle-visited">Mark all as visited</button>
+
+            <div id="chest-counter">0 / 0 chests found</div>
+        </div>
     </div>
 
     <div id="map-viewport">

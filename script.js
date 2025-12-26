@@ -68,7 +68,7 @@ const maps = {
     }
   },
 
-  test: {
+/*   test: {
     name: "Test",
     image: "assets/test-map.png",
     chestTypes: {
@@ -83,15 +83,12 @@ const maps = {
         iconDone: 'assets/ChestDone.png'
       }
     }
-  }
+  } */
 };
 
 // Mapa activo por defecto
 let currentMapId = "southHorn";
-
 let chestTypes = maps[currentMapId].chestTypes;
-
-
 let saved = JSON.parse(localStorage.getItem('treasures')) || {};
 
 if (!saved[currentMapId]) {
@@ -449,7 +446,7 @@ function loadMap(mapId) {
   initMap();
 }
 
-document.querySelectorAll('#map-selector button').forEach(btn => {
+document.querySelectorAll('#sidebar-map-selector button').forEach(btn => {
   btn.addEventListener('click', () => {
     loadMap(btn.dataset.map);
   });
